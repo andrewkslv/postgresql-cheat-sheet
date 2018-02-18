@@ -1,5 +1,5 @@
 # PostgreSQL Cheat Sheet
-PostgreSQL (psql) command lines in one page for the SQL REPL
+PostgreSQL (psql) command lines in one page for the SQL REPL.
 
 ![YAP](https://i.imgur.com/flM2owb.gif)
 
