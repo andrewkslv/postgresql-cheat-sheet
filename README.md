@@ -1,7 +1,7 @@
 # PostgreSQL Cheat Sheet
-PostgreSQL (psql) command lines in one page for the SQL REPL.
+PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](https://www.postgresql.org/docs/10/static/index.html).
 
-![YAP](https://i.imgur.com/flM2owb.gif)
+<img src="https://i.imgur.com/nueSCcH.gif" width="250">
 
 ## Basics
 | Name | Description |
@@ -22,7 +22,7 @@ PostgreSQL (psql) command lines in one page for the SQL REPL.
 | `\d table_name` | List columns on table. |
 | `\df` | List functions |
 | `\dv` | List views. |
-| `\x auto` | Super pretty format query for long rows. |
-| `\t` | Turn off/on output printing header and row count. |
+| `\x auto` | Super pretty query output for long rows. |
+| `\t` | Turn off/on output header and row count. |
 
-Help me to fill out the rest useful commands which you think helpful to use on daily basis.
+Help me to fill out the rest useful commands which you think might be helpful to use on daily basis.
