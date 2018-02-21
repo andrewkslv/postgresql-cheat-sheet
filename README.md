@@ -19,7 +19,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `\l+` | Lists all the databases with size. |
 | `\c db_name` | Connect to database `db_name`. |
 | `\dn` | List all schemas. |
-| `\dt` | List all tables in the connected database. |
+| `\dt schema_name.*` | List all tables in `schema_name`. |
 | `\d table_name` | List columns on table. |
 | `\df` | List functions |
 | `\dv` | List views. |
@@ -30,5 +30,8 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `\ef [function]` | Open an editor, and put the function into the buffer. Without a function, it provides a convenient template for creating a new function. |
 | `\s` | Print out your psql history to STDOUT. |
 | `\timing` | Show timing for query execution. |
+
+
+Hope you would be cool and efficient with this little cheat sheet.
 
 Help me to fill out the rest useful commands which you think might be helpful to use on daily basis.
