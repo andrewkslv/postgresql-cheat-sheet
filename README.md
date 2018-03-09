@@ -10,6 +10,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `psql -d pg_data_base -U pg_user` | Connect to localhost `pg_data_base` as `pg_user`. |
 | `create user pg_user with password 'pguserpassword';` | Create a user `pg_user`. |
 | `create database pg_database owner pg_user;` | Create a database with name `pg_database` which belongs to `pg_user`.
+| `create extension "uuid-ossp";` | Create useful extension with functions like `uuid_generate_v4`.
 
 
 ## General Purpose
