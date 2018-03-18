@@ -7,16 +7,21 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | Name | Description |
 |------|-------------|
 | `psql` | Connect to the database. |
-| `psql -d pg_data_base -U pg_user` | Connect to localhost `pg_data_base` as `pg_user`. |
-| `create user pg_user with password 'pguserpassword';` | Create a user `pg_user`. |
-| `create database pg_database owner pg_user;` | Create a database with name `pg_database` which belongs to `pg_user`.
+| `psql -d <db> -U <user>` | Connect to localhost `db` as `user` name. |
+| `psql create database <db>` | Create database with `db` name. |
+| `create user <pg_user> with password '<password>';` | Create a user `pg_user` with `password`. |
+| `create database <db> owner <user>;` | Create a database with name `db` which belongs to `user`.
 | `create extension "uuid-ossp";` | Create useful extension with functions like `uuid_generate_v4`.
+| `revoke all on database <db> from public;` |
+| `grant connect on database <db> to <user>;` |
+| `grant all on database <db> to <user>;` |
 
 
 ## General Purpose
 | Name | Description |
 |------|-------------|
 | `\q` | Quit from psql. |
+| `\?` | All commands of psql. |
 | `\l+` | Lists all the databases with size. |
 | `\c db_name` | Connect to database `db_name`. |
 | `\dn` | List all schemas. |
