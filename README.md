@@ -12,6 +12,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `create user <pg_user> with password '<password>';` | Create a user `pg_user` with `password`. |
 | `create database <db> owner <user>;` | Create a database with name `db` which belongs to `user`.
 | `create extension "uuid-ossp";` | Create useful extension with functions like `uuid_generate_v4`.
+| `create extension "hstore";` | Create useful extension[hstore](https://www.postgresql.org/docs/current/static/hstore.html).
 | `revoke all on database <db> from public;` |
 | `grant connect on database <db> to <user>;` |
 | `grant all on database <db> to <user>;` |
