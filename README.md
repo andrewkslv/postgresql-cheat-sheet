@@ -53,3 +53,15 @@ $ cat > ~/.psqlrc
 \setenv PAGER 'pspg --no-mouse -bX --no-commandbar --no-topbar'
 \set HISTSIZE 100000
 ```
+
+## Generating and inserting fake data
+
+```psql
+CREATE TABLE some_table (id bigserial PRIMARY KEY, a float);​
+SELECT create_distributed_table('some_table', 'id');​​​
+
+INSERT INTO some_table (a) SELECT random() * 100000 FROM generate_series(1, 1000000) i;    -- 2 secs  (40MB)​
+INSERT INTO some_table (a) SELECT random() * 100000 FROM generate_series(1, 10000000) i;   -- 20 secs (400MB)​
+INSERT INTO some_table (a) SELECT random() * 100000 FROM generate_series(1, 100000000) i;  -- 300 secs (4GB)​
+INSERT INTO some_table (a) SELECT random() * 100000 FROM generate_series(1, 1000000000) i; -- 40 mins (40GB)​
+```
