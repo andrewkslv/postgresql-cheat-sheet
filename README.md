@@ -42,3 +42,14 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 Hope you would be cool and efficient with this little cheat sheet.
 
 Help me to fill out the rest useful commands which you think might be helpful to use on daily basis.
+
+## Config
+
+```
+$ cat > ~/.psqlrc
+\timing on
+\pset linestyle unicode 
+\pset border 2
+\setenv PAGER 'pspg --no-mouse -bX --no-commandbar --no-topbar'
+\set HISTSIZE 100000
+```
