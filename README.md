@@ -16,6 +16,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `revoke all on database <db> from public;` |
 | `grant connect on database <db> to <user>;` |
 | `grant all on database <db> to <user>;` |
+| `alter role <user> set search_path = <schemaname>;` |
 
 
 ## General Purpose
