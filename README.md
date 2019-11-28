@@ -42,7 +42,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 
 Hope you would be cool and efficient with this little cheat sheet.
 
-Help me to fill out the rest useful commands which you think might be helpful to use on daily basis.
+Help me to fill out the rest of these useful commands if you think that might be helpful for you.
 
 ## Config
 
