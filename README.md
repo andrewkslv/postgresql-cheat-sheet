@@ -47,12 +47,18 @@ Help me to fill out the rest of these useful commands if you think that might be
 ## Config
 
 ```
-$ cat > ~/.psqlrc
-\timing on
-\pset linestyle unicode 
-\pset border 2
-\setenv PAGER 'pspg --no-mouse -bX --no-commandbar --no-topbar'
-\set HISTSIZE 100000
+$ cat ~/.psqlrc
+\set PROMPT1 '%~%x%# '
+\x auto
+\set ON_ERROR_STOP on
+\set ON_ERROR_ROLLBACK interactive
+\pset null '¤'
+\pset linestyle 'unicode'
+\pset unicode_border_linestyle single
+\pset unicode_column_linestyle single
+\pset unicode_header_linestyle doubleset intervalstyle to 'postgres_verbose';
+
+\setenv LESS '-iMFXSx4R'
 ```
 
 ## Generating and inserting fake data
