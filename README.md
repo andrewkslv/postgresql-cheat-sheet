@@ -48,17 +48,23 @@ Help me to fill out the rest of these useful commands if you think that might be
 
 ```
 $ cat ~/.psqlrc
-\set PROMPT1 '%~%x%# '
+\set ECHO none
+\set PROMPT1 '%n@%/%R%# %x '
 \x auto
 \set ON_ERROR_STOP on
 \set ON_ERROR_ROLLBACK interactive
+
 \pset null '¤'
 \pset linestyle 'unicode'
+
 \pset unicode_border_linestyle single
 \pset unicode_column_linestyle single
-\pset unicode_header_linestyle doubleset intervalstyle to 'postgres_verbose';
+\pset unicode_header_linestyle double
+
+set intervalstyle to 'postgres_verbose';
 
 \setenv LESS '-iMFXSx4R'
+\set ECHO all
 ```
 
 ## Generating and inserting fake data
