@@ -9,7 +9,7 @@ PostgreSQL (psql) commands in one page for the SQL REPL from [postgresql.org](ht
 | `psql` | Connect to the database. |
 | `psql -d <db> -U <user>` | Connect to localhost `db` as `user` name. |
 | `psql create database <db>` | Create database with `db` name. |
-| `create user <pg_user> with password '<password>';` | Create a user `pg_user` with `password`. |
+| `create role <pg_user> with LOGIN ENCRYPTED <password>` | Create a user `pg_user` with `password`. |
 | `create database <db> owner <user>;` | Create a database with name `db` which belongs to `user`.
 | `create extension if not exists "uuid-ossp";` | Create useful extension with functions like `uuid_generate_v4`. [full doc](https://www.postgresql.org/docs/current/static/uuid-ossp.html)
 | `create extension if not exists "hstore";` | Create useful extension [hstore](https://www.postgresql.org/docs/current/static/hstore.html).
